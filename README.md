@@ -13,3 +13,4 @@ This repository contains my solutions to the assignments of the [CS231n](http://
 ### Assignment 2:  
 [Q1](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment2/FullyConnectedNets.ipynb): Fully-connected Neural Network. (Completed)  
 [Q2](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment2/BatchNormalization.ipynb): Batch Normalization. (Completed)  
+[Q3](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment2/Dropout.ipynb): Dropout. (Completed)  
