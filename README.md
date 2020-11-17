@@ -15,3 +15,4 @@ This repository contains my solutions to the assignments of the [CS231n](http://
 [Q2](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment2/BatchNormalization.ipynb): Batch Normalization. (Completed)  
 [Q3](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment2/Dropout.ipynb): Dropout. (Completed)  
 [Q4](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment2/ConvolutionalNetworks.ipynb): Convolutional Networks. (Completed)  
+[Q5](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment2/PyTorch.ipynb): PyTorch / TensorFlow on CIFAR-10. (Completed in PyTorch)  
