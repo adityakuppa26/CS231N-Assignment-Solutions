@@ -16,3 +16,9 @@ This repository contains my solutions to the assignments of the [CS231n](http://
 [Q3](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment2/Dropout.ipynb): Dropout. (Completed)  
 [Q4](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment2/ConvolutionalNetworks.ipynb): Convolutional Networks. (Completed)  
 [Q5](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment2/PyTorch.ipynb): PyTorch / TensorFlow on CIFAR-10. (Completed in PyTorch)  
+  
+### Assignment 3:  
+[Q1](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment3/RNN_Captioning.ipynb):  Image Captioning with RNNs. (Completed)  
+[Q2](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment3/LSTM_Captioning.ipynb): Image Captioning with LSTMs. (Completed)  
+[Q3](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment3/NetworkVisualization-PyTorch.ipynb): Network Visualization: Saliency maps, Class Visualization, and Fooling Images. (Completed in PyTorch)  
+[Q4](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment3/StyleTransfer-PyTorch.ipynb): Style Transfer. (Completed in PyTorch)  
