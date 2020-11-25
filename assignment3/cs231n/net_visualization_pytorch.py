@@ -34,8 +34,12 @@ def compute_saliency_maps(X, y, model):
     ##############################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-    pass
+    scores = model(X)
 
+    scores = scores.gather(1, y.view(-1,1)).squeeze()
+    scores.backward(torch.ones(y.shape[0]))
+    
+    saliency, _ = torch.max(X.grad.data.abs(), dim=1)
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
     ##############################################################################
     #                             END OF YOUR CODE                               #
@@ -75,9 +79,17 @@ def make_fooling_image(X, target_y, model):
     # You can print your progress over iterations to check your algorithm.       #
     ##############################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
-
-    pass
-
+    model.eval()
+    while True:
+      scores = model(X_fooling)
+      _, index = torch.max(scores, dim=1)
+      if index == target_y:
+        break
+      else:
+        scores[:, target_y].backward()
+        dX = learning_rate * X_fooling.grad.data / torch.norm(X_fooling.grad.data)
+        X_fooling.data += dX.data
+        X_fooling.grad.data.zero_()
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
     ##############################################################################
     #                             END OF YOUR CODE                               #
@@ -94,8 +106,11 @@ def class_visualization_update_step(img, model, target_y, l2_reg, learning_rate)
     ########################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-    pass
-
+    scores = model(img)
+    score = scores[:, target_y] - l2_reg * torch.norm(img.data)
+    score.backward()
+    img.data += learning_rate * img.grad.data / torch.norm(img.grad.data)
+    img.grad.data.zero_()
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
     ########################################################################
     #                             END OF YOUR CODE                         #
