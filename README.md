@@ -1,7 +1,7 @@
 # CS231n: Convolutional Neural Networks for Visual Recognition Assignment Solutions  
   
   
-This repository contains my solutions to the assignments of the [CS231n](http://cs231n.stanford.edu/) course offered by Stanford University (Spring 2017).  
+This repository contains my solutions to the assignments of the [CS231n](http://cs231n.stanford.edu/) course offered by Stanford University.  
   
 ### Assignment 1:  
 [Q1](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment1/knn.ipynb): k-Nearest Neighbor classifier. (Completed)  
@@ -15,3 +15,4 @@ This repository contains my solutions to the assignments of the [CS231n](http://
 [Q2](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment2/BatchNormalization.ipynb): Batch Normalization. (Completed)  
 [Q3](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment2/Dropout.ipynb): Dropout. (Completed)  
 [Q4](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment2/ConvolutionalNetworks.ipynb): Convolutional Networks. (Completed)  
+[Q5](https://github.com/adityakuppa26/CS231N-Assignment-Solutions/blob/master/assignment2/PyTorch.ipynb): PyTorch / TensorFlow on CIFAR-10. (Completed in PyTorch)  
